@@ -1,15 +1,19 @@
 
-# IranFood Dataset — Pilot Experiment
+# IranFood Dataset — Pilot Classification Experiment
 
 ## Overview
 
-An initial pilot experiment was conducted to evaluate the IranFood dataset for Iranian food image classification.
+An initial pilot classification experiment was conducted to evaluate the IranFood Dataset and establish a baseline for deep learning-based food image classification.
+
+The purpose of this experiment was to assess how well the initial dataset could support food image classification using different CNN architectures.
 
 The pilot dataset included:
 
-* **1,903 images**
-* **18 food classes**
-* **3 CNN architectures:** ResNet, MobileNet, EfficientNetB0
+- 1,903 images
+- 18 Iranian food classes
+- 3 CNN architectures: ResNet, MobileNet, and EfficientNet-B0
+
+The experiment provides an initial assessment of the dataset's classification performance. As the dataset is expanded with more food classes, images, and greater visual diversity, further experiments will be conducted to evaluate model performance and generalization. 
 
 ## Initial Results
 
