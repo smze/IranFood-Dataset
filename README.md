@@ -99,4 +99,6 @@ Somayeh Mardani
 
 AI / Machine Learning Engineer & Researcher
 
-Research Interests: Computer Vision · Deep Learning · Multimodal AI · Dataset Design · Nutrition AI
+Technical Lead & Project Designer — IranFood Dataset
+
+Research interests: Computer Vision · Deep Learning · Multimodal AI · Dataset Development · Food Recognition · Nutrition AI
