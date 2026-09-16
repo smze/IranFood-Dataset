@@ -50,17 +50,17 @@ These results represent the initial benchmark on the 1,903-image, 18-class pilot
 
 ## Research Focus
 
-Current research activities include:
+ Current research activities include:
 
-Dataset design and expansion
-Data quality control
-Image standardization
-Food recognition
-Deep learning model benchmarking
-Generalization and overfitting analysis
-Error analysis
-Nutrition AI
-Multimodal AI
+- Dataset design and expansion
+- Data quality control
+- Image standardization
+- Food recognition
+- Deep learning model benchmarking
+- Generalization and overfitting analysis
+- Error analysis
+- Nutrition AI
+- Multimodal AI
 ## Current Status
 
 Active Research & Development
