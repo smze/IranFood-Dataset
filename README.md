@@ -12,9 +12,9 @@ The project combines dataset development, benchmarking, and iterative model eval
 
 Current Status
 
-40 food classes
-Pilot dataset: 1,903 images across 18 classes
-Ongoing dataset expansion and image collection
+- 40 food classes
+- Pilot dataset: 1,903 images across 18 classes
+- Ongoing dataset expansion and image collection
 
 The dataset is being developed using multiple image sources, including publicly available online images, controlled image acquisition, and user-contributed images.
 
@@ -35,7 +35,7 @@ The pilot 18-class dataset was evaluated using three deep learning architectures
 
 - ResNet
 - MobileNet
-- EfficientNetB0
+- EfficientNet-B0
 ### Pilot Benchmark Results
 
 
@@ -43,7 +43,7 @@ The pilot 18-class dataset was evaluated using three deep learning architectures
 |---|---:|---:|---:|---:|---:|
 | ResNet | 10 | 62.48% | 62.01% | 87.04% | 87.03% |
 | MobileNet | 8 | 79.29% | 79.11% | 92.12% | 92.12% |
-| **EfficientNetB0** | **5** | **81.95%** | **81.86%** | 84.53% | 84.49% |
+| **EfficientNet-B0** | **5** | **81.95%** | **81.86%** | 84.53% | 84.49% |
 
 
 These results represent the initial benchmark on the 1,903-image, 18-class pilot dataset. Further evaluation will be conducted on the expanded 40-class dataset.
@@ -67,22 +67,22 @@ Active Research & Development
 
 Current focus:
 
-40-class dataset development
-Dataset expansion and quality control
-Benchmarking against established food datasets
-Deep learning model evaluation
-Preparation for larger-scale experiments and MVP development
+- 40-class dataset development
+- Dataset expansion and quality control
+- Benchmarking against established food datasets
+- Deep learning model evaluation
+- Preparation for larger-scale experiments and MVP development
 ## Future Research Directions
 
 Potential research directions include:
 
-Further dataset expansion
-Real-world image diversity
-Food recognition and segmentation
-Depth and multi-view analysis
-Food volume estimation
-Multimodal food understanding
-Nutrition estimation
+- Further dataset expansion
+- Real-world image diversity
+- Food recognition and segmentation
+- Depth and multi-view analysis
+- Food volume estimation
+- Multimodal food understanding
+- Nutrition estimation
 
 Detailed methodology, experimental configurations, and research documentation will be added separately as the project progresses.
 
