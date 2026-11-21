@@ -4,54 +4,57 @@
 
 ## Overview
 
-IranFood Dataset is a research-oriented project focused on developing a diverse and structured image dataset of Iranian foods for Food Recognition, Computer Vision, and Nutrition AI applications.
+IranFood Dataset is a research-oriented initiative focused on developing a diverse and structured image dataset of Iranian foods for Food Recognition, Computer Vision, and Nutrition AI applications.
 
-The project combines dataset development, benchmarking, and iterative model evaluation to investigate food image recognition under diverse visual conditions.
+The project combines dataset development, data quality management, deep learning benchmarking, and model evaluation to investigate food recognition across different Iranian food categories and visual conditions.
 
 ## Dataset Development
 
-Current Status
+The dataset is being developed through a structured workflow involving image collection, organization, quality control, and dataset expansion.
 
-- 40 food classes
-- Pilot dataset: 1,903 images across 18 classes
-- Ongoing dataset expansion and image collection
+**Current dataset versions:**
 
-The dataset is being developed using multiple image sources, including publicly available online images, controlled image acquisition, and user-contributed images.
+- **18-class:** Initial pilot dataset and subsequent extended benchmark version.
+- **42-class:** Expanded dataset containing the original 18 food categories and 24 additional categories.
+- **100-class:** Dataset expansion currently undergoing data cleaning and quality control.
 
-## Dataset Benchmarking
+Images are collected from multiple sources, including publicly available online images, controlled image acquisition, and user-contributed images.
 
+Dataset development also involves image standardization, annotation management, and consistent train, validation, and test split organization.
 
-Established food and nutrition datasets have been studied as references for the development of IranFood Dataset, including:
+## Dataset Benchmarking and Related Work
+
+Established food and nutrition datasets have been studied as references for the design and development of IranFood Dataset, including:
 
 - Food-101
 - Nutrition5k
 - Other relevant food and nutrition datasets
 
-The comparative study considers aspects such as dataset structure, class diversity, image characteristics, annotation approaches, and potential applications in food recognition and nutrition estimation.
+The comparative study considers dataset structure, class diversity, image characteristics, annotation approaches, and potential applications in food recognition and nutrition estimation.
 
 ## Model Benchmarking
 
-The project includes two distinct experimental stages:
+Model evaluation has been conducted in two distinct experimental stages.
 
-### 1. Initial 18-Class Pilot Benchmark
+### 1. Initial 18-Class Pilot Experiment
 
-The initial 18-class pilot dataset was evaluated using three deep learning architectures on CPU, with a maximum of 10 training epochs.
+The initial pilot dataset, consisting of **1,903 images across 18 food classes**, was evaluated using three deep learning architectures.
 
-| Model               | Best Epoch | Val. Accuracy | Val. F1    | Train Accuracy | Train F1 |
-| ------------------- | ---------- | ------------- | ---------- | -------------- | -------- |
-| ResNet              | 10         | 62.48%        | 62.01%     | 87.04%         | 87.03%   |
-| MobileNet           | 8          | 79.29%        | 79.11%     | 92.12%         | 92.12%   |
-| **EfficientNet-B0** | **5**      | **81.95%**    | **81.86%** | 84.53%         | 84.49%   |
+- Models: ResNet, MobileNet, and EfficientNet-B0
+- Hardware: CPU
+- Training: Up to 10 epochs
+- Best-performing model checkpoints were saved during training.
 
-These results represent the preliminary benchmark on the 1,903-image, 18-class pilot dataset.
+**Pilot results:**
+Detailed experimental configurations and results, including the performance of all three models, are available in the [Initial 18-Class Pilot](experiments/01-initial-pilot-18-class/README.md).
 
 ### 2. Extended Dataset and Model Benchmarks
 
-Following the initial pilot study, the dataset management and experimental pipeline were further developed.
+Following the initial pilot, the dataset organization, data management workflow, and experimental pipeline were further developed.
 
-The 18-class dataset was re-evaluated using the improved framework, and the dataset was subsequently expanded to 42 classes. The 100-class version is currently under development.
+The improved framework was used to re-evaluate the 18-class dataset and subsequently evaluate the expanded 42-class version.
 
-The extended framework includes:
+**Experimental framework:**
 
 - Four deep learning architectures:
   - EfficientNet-B0
@@ -61,68 +64,73 @@ The extended framework includes:
 - ImageNet-pretrained weights
 - GPU-based training
 - Separate CSV files for training, validation, and test splits
-- A maximum of 30 epochs with Early Stopping
-- Multiple classification evaluation metrics
+- Up to 30 training epochs with Early Stopping
+- Comprehensive classification evaluation metrics
 - Confusion matrix analysis
 - Training time measurement
 
-The original 18-class samples and their split assignments were maintained within the 42-class dataset version, allowing more consistent evaluation across dataset versions.
+- The shared 18-class samples retain their corresponding train, validation, and test split assignments in the 42-class version, supporting consistency across the extended experiments.
 
-Detailed experimental configurations and results are documented separately for each dataset version.
+Detailed configurations, evaluation metrics, and visual results are documented separately for each dataset version:
 
+- [18-Class Extended Benchmark](experiments/02-extended-benchmarks/18-class/README.md)
+- [42-Class Extended Benchmark](experiments/02-extended-benchmarks/42-class/README.md)
 
+The 100-class dataset is currently undergoing preparation and quality control. Its model benchmarking will be conducted as a separate experimental stage.
 
 ## Research Focus
 
- Current research activities include:
+Current research and development activities include:
 
-- Dataset design and expansion
-- Data quality control
-- Image standardization
-- Food recognition
+- Iranian food image dataset design and expansion
+- Data collection and quality control
+- Image standardization and dataset organization
+- Food image classification and recognition
 - Deep learning model benchmarking
-- Generalization and overfitting analysis
-- Error analysis
-- Nutrition AI
-- Multimodal AI
+- Model generalization and overfitting analysis
+- Performance evaluation and error analysis
+- Nutrition AI and food understanding
+- Multimodal AI applications
+
 ## Current Status
 
-Active Research & Development
+**Active Research and Development**
 
-Current focus:
+Current activities focus on:
 
-- 40-class dataset development
-- Dataset expansion and quality control
-- Benchmarking against established food datasets
-- Deep learning model evaluation
-- Preparation for larger-scale experiments and MVP development
+- Preparation and quality control of the 100-class dataset
+- Maintenance and documentation of the 18-class and 42-class experimental versions
+- Deep learning model evaluation and benchmarking
+- Analysis of model performance and classification errors
+- Development of the research foundation for a nutrition-oriented food recognition MVP
+
 ## Future Research Directions
 
 Potential research directions include:
 
-- Further dataset expansion
-- Real-world image diversity
-- Food recognition and segmentation
-- Depth and multi-view analysis
-- Food volume estimation
+- Further expansion of Iranian food categories
+- Improved recognition under real-world imaging conditions
+- Multi-label food recognition and food component detection
+- Food segmentation
+- Depth-based and multi-view image analysis
+- Food volume and portion estimation
 - Multimodal food understanding
-- Nutrition estimation
+- Nutrition estimation and dietary assessment
 
-Detailed methodology, experimental configurations, and research documentation will be added separately as the project progresses.
+Detailed methodology, experimental configurations, and research findings will be documented as the project progresses.
 
 ## Project Website
 
 A public landing page has been developed to support dataset participation and image collection.
 
-Visit the IranFood Dataset Website: Iranfoodd.ir
-
+**Website:** [Iranfoodd.ir](https://iranfoodd.ir)
 
 ## Author
 
-Somayeh Mardani
+**Somayeh Mardani**
 
 AI / Machine Learning Engineer & Researcher
 
 Technical Lead & Project Designer — IranFood Dataset
 
-Research interests: Computer Vision · Deep Learning · Multimodal AI · Dataset Development · Food Recognition · Nutrition AI
+**Research Interests:** Computer Vision · Deep Learning · Multimodal AI · Dataset Development · Food Recognition · Nutrition AI
