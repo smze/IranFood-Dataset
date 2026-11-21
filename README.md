@@ -31,22 +31,49 @@ The comparative study considers aspects such as dataset structure, class diversi
 
 ## Model Benchmarking
 
-The pilot 18-class dataset was evaluated using three deep learning architectures:
 
-- ResNet
-- MobileNet
-- EfficientNet-B0
-### Pilot Benchmark Results
+## Model Benchmarking
+
+The project includes two distinct experimental stages:
+
+### 1. Initial 18-Class Pilot Benchmark
+
+The initial 18-class pilot dataset was evaluated using three deep learning architectures on CPU, with a maximum of 10 training epochs.
+
+| Model               | Best Epoch | Val. Accuracy | Val. F1    | Train Accuracy | Train F1 |
+| ------------------- | ---------- | ------------- | ---------- | -------------- | -------- |
+| ResNet              | 10         | 62.48%        | 62.01%     | 87.04%         | 87.03%   |
+| MobileNet           | 8          | 79.29%        | 79.11%     | 92.12%         | 92.12%   |
+| **EfficientNet-B0** | **5**      | **81.95%**    | **81.86%** | 84.53%         | 84.49%   |
+
+These results represent the preliminary benchmark on the 1,903-image, 18-class pilot dataset.
+
+### 2. Extended Dataset and Model Benchmarks
+
+Following the initial pilot study, the dataset management and experimental pipeline were further developed.
+
+The 18-class dataset was re-evaluated using the improved framework, and the dataset was subsequently expanded to 42 classes. The 100-class version is currently under development.
+
+The extended framework includes:
+
+- Four deep learning architectures:
+  - EfficientNet-B0
+  - ResNet18
+  - MobileNetV2
+  - Vision Transformer (ViT-B/16)
+- ImageNet-pretrained weights
+- GPU-based training
+- Separate CSV files for training, validation, and test splits
+- A maximum of 30 epochs with Early Stopping
+- Multiple classification evaluation metrics
+- Confusion matrix analysis
+- Training time measurement
+
+The original 18-class samples and their split assignments were maintained within the 42-class dataset version, allowing more consistent evaluation across dataset versions.
+
+Detailed experimental configurations and results are documented separately for each dataset version.
 
 
-| Model | Best Epoch | Val. Accuracy | Val. F1 | Train Accuracy | Train F1 |
-|---|---:|---:|---:|---:|---:|
-| ResNet | 10 | 62.48% | 62.01% | 87.04% | 87.03% |
-| MobileNet | 8 | 79.29% | 79.11% | 92.12% | 92.12% |
-| **EfficientNet-B0** | **5** | **81.95%** | **81.86%** | 84.53% | 84.49% |
-
-
-These results represent the initial benchmark on the 1,903-image, 18-class pilot dataset. Further evaluation will be conducted on the expanded 40-class dataset.
 
 ## Research Focus
 
