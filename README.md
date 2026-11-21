@@ -31,9 +31,6 @@ The comparative study considers aspects such as dataset structure, class diversi
 
 ## Model Benchmarking
 
-
-## Model Benchmarking
-
 The project includes two distinct experimental stages:
 
 ### 1. Initial 18-Class Pilot Benchmark
